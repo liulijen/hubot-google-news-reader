@@ -1,7 +1,7 @@
 {
-  "name": "hubot-google-news-reader",
-  "version": "0.1.5",
-  "description": "Hubot Google News Reader",
+  "name": "hubot-google-news-reader-tw",
+  "version": "0.0.1",
+  "description": "Hubot Google News Reader for TW",
   "main": "hubot-google-news.coffee",
   "scripts": {
     "test": "grunt test"
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/golbin/hubot-google-news-reader.git"
+    "url": "https://github.com/liulijen/hubot-google-news-reader.git"
   },
   "keywords": [
     "hubot",
@@ -36,10 +36,10 @@
     "news",
     "hubot-scripts"
   ],
-  "author": "golbin",
+  "author": "lee",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/golbin/hubot-google-news-reader/issues"
+    "url": "https://github.com/liulijen/hubot-google-news-reader/issues"
   },
-  "homepage": "https://github.com/golbin/hubot-google-news-reader"
+  "homepage": "https://github.com/liulijen/hubot-google-news-reader"
 }
