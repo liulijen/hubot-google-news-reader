@@ -16,7 +16,7 @@ Promise   = require 'bluebird'
 RSSReader = require path.join __dirname, '/libs/rss-reader'
 
 NEWS_FEED = {
-  all: 'https://news.google.com/news?cf=all&hl=zh-TW&pz=1&ned=tw&output=rss',
+  all: 'http://news.google.com/news?cf=all&hl=zh-TW&pz=1&ned=tw&output=rss',
   it: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=t&output=rss',
   politics: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=p&output=rss',
   business: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=b&output=rss',
