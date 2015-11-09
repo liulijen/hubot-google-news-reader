@@ -10,7 +10,7 @@ describe 'RSSReader', ->
 
     reader = new RSSReader {}
 
-    reader.fetch 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&output=rss'
+    reader.fetch 'http://news.google.com/news?cf=all&hl=zh-TW&pz=1&ned=tw&output=rss'
     .then (entries) ->
       assert.ok entries instanceof Array
       for entry in entries
