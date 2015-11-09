@@ -16,15 +16,15 @@ Promise   = require 'bluebird'
 RSSReader = require path.join __dirname, '/libs/rss-reader'
 
 NEWS_FEED = {
-  all: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&output=rss',
-  it: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=t&output=rss',
-  politics: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=p&output=rss',
-  business: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=b&output=rss',
-  society: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=y&output=rss',
-  life: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=l&output=rss',
-  world: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=w&output=rss',
-  enter: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=e&output=rss',
-  sports: 'http://news.google.co.kr/news?pz=1&cf=all&ned=kr&hl=ko&topic=s&output=rss',
+  all: 'https://news.google.com/news?cf=all&hl=zh-TW&pz=1&ned=tw&output=rss',
+  it: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=t&output=rss',
+  politics: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=p&output=rss',
+  business: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=b&output=rss',
+  society: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=y&output=rss',
+  life: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=l&output=rss',
+  world: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=w&output=rss',
+  enter: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=e&output=rss',
+  sports: 'http://news.google.com/news?pz=1&cf=all&ned=tw&hl=zh-TW&topic=s&output=rss',
 }
 
 CATEGORY = []
