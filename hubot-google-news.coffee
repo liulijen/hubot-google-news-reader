@@ -47,12 +47,12 @@ module.exports = (robot) ->
   robot.respond /news(\s*[a-z]*)/i, (msg) ->
     if msg.match[1]
       if msg.match[1].trim() == 'help'
-        msg.send "카테고리: " + CATEGORY.join(', ')
+        msg.send "Category: " + CATEGORY.join(', ')
         return
       else if NEWS_FEED[msg.match[1].trim()]
         category = msg.match[1].trim()
       else
-        msg.send msg.match[1].trim() + " 카테고리가 없습니다.\n카테고리: " + CATEGORY.join(',')
+        msg.send msg.match[1].trim() + " There are no categories.\nCategory: " + CATEGORY.join(',')
         return
     else
       category = 'all'
@@ -65,8 +65,8 @@ module.exports = (robot) ->
         for entry in NEWS_FEED[category].entries.splice(0, DEFAULT_NEWS_NUM)
           msg.send entry.toString()
       .catch (err) ->
-        msg.send "뉴스를 가져오지 못했습니다."
+        msg.send "Failed to get the news."
     else
       for entry in NEWS_FEED[category].entries.splice(0, DEFAULT_NEWS_NUM)
         msg.send entry.toString()
-      msg.send "갱신시간: " + new Date(NEWS_FEED[category].updated)
+      msg.send "Update Time: " + new Date(NEWS_FEED[category].updated)
